@@ -10,9 +10,7 @@ import Header from './Header';
 export default class App extends Component {
   render() {
     return (
-     <Header title = "Crummy Cook recipes"/>
+      <Header title = "Crummy Cook recipes"/>
     );
   }
 }
-
-
