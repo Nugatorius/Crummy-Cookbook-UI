@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "lint": "./node_modules/eslint/bin/eslint.js --fix ./src"
+    "lint": "./node_modules/eslint/bin/eslint.js --fix ./src",
+    "precommit": "npm run lint",
+    "prepush": "npm run test"
   },
   "dependencies": {
     "react": "16.3.0",
@@ -16,6 +18,7 @@
     "babel-preset-react-native": "4.0.0",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.14.3",
     "jest": "22.4.3",
     "react-test-renderer": "16.3.0"
   },
