@@ -5,7 +5,10 @@
         "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
     "parserOptions": {
         "ecmaVersion": 8,
         "ecmaFeatures": {
@@ -34,9 +37,15 @@
             "error",
             "always"
         ],
-        "no-console": 0,
-        "no-unused-vars": 0,
-        "no-undef": 0,
-        "eol-last":"error"
+        "no-console": 2,
+        "no-unused-vars": 2,
+        "no-undef": 2,
+        "eol-last": "error"
+    },
+    "globals": {
+        "GLOBAL": false,
+        "it": false,
+        "expect": false,
+        "describe": false
     }
 }
