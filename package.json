@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "lint": "./node_modules/eslint/bin/eslint.js --fix ./src",
+    "lint": "./node_modules/eslint/bin/eslint.js ./src",
+    "lint:fix": "./node_modules/eslint/bin/eslint.js --fix ./src",
     "precommit": "npm run lint",
     "prepush": "npm run test"
   },
