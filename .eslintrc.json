@@ -50,7 +50,6 @@
         "GLOBAL": false,
         "it": false,
         "expect": false,
-        "describe": false,
-        "state": true
+        "describe": false
     }
 }
