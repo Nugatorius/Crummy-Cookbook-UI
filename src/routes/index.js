@@ -5,11 +5,25 @@ import { createReduxBoundAddListener } from 'react-navigation-redux-helpers';
 import PropTypes from 'prop-types';
 
 import Home from '../Components/Home';
+import Login from '../Components/Login';
+import Signup from '../Components/Signup';
 import Counter from '../Components/CounterRedux';
 
 export const Router = StackNavigator({
   home: {
     screen: Home,
+    navigationOptions: {
+      header: null
+    }
+  },
+  login: {
+    screen: Login,
+    navigationOptions: {
+      header: null
+    }
+  },
+  signup: {
+    screen: Signup,
     navigationOptions: {
       header: null
     }

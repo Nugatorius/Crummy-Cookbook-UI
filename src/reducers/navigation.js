@@ -1,8 +1,8 @@
 import { Router } from '../routes';
 
 const router = Router.router;
-const homeNavAction = router.getActionForPathAndParams('home');
-const initialNavState = router.getStateForAction(homeNavAction);
+const loginNavAction = router.getActionForPathAndParams('signup');
+const initialNavState = router.getStateForAction(loginNavAction);
 
 const navReducer = (state = initialNavState, action) => {
   const nextState = router.getStateForAction(action, state);

@@ -1,7 +1,8 @@
 const styles = {
   viewStyles: 
     { display: 'flex', 
-      flexDirection: 'column', 
+      flexDirection: 'column',
+      height: 350,
       justifyContent: 'center'
     }
 };
