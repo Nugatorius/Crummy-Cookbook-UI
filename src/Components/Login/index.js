@@ -14,12 +14,8 @@ import Input from '../Utils/Input';
 
 class Login extends Component {
   
-  onUsernameChange(text) {
-    this.props.usernameChanged(text);
-  }
-
-  onPasswordChange(text) {
-    this.props.passwordChanged(text);
+  onInputChange(text, label) {
+    this.props.inputChanged(text, label);
   }
   
   onLoginPress() {
@@ -36,8 +32,8 @@ class Login extends Component {
     return (
       <View style={viewStyles}>
         <Header title="Crummy Cook recipes - Login" />
-        <Input label='Username' placeholder='Username' password={false} onChangeText={this.onUsernameChange.bind(this)} value={this.props.username} /> 
-        <Input label='Password' placeholder='Password' password={true} onChangeText={this.onPasswordChange.bind(this)} value={this.props.password} /> 
+        <Input label='Username' placeholder='Username' isPassword={false} onChangeText={(text) => this.onInputChange(text, 'username')} value={this.props.username} /> 
+        <Input label='Password' placeholder='Password' isPassword={true} onChangeText={(text) => this.onInputChange(text, 'password')} value={this.props.password} /> 
         <Button text="Login" onPress={() => this.onLoginPress()} />
       </View>
     );
@@ -48,15 +44,14 @@ Login.propTypes = {
   navigation: PropTypes.object,
   username: PropTypes.string,
   password: PropTypes.string,
-  usernameChanged: PropTypes.func,
-  passwordChanged: PropTypes.func,
+  inputChanged: PropTypes.func,
   loginUser: PropTypes.func
 };
 
 const mapStateToProps = (state) => {
   return {
-    username: state.auth.username,
-    password: state.auth.password,
+    username: state.login.username,
+    password: state.login.password,
   };
 };
 export default connect(mapStateToProps, actions)(Login);

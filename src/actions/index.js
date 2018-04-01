@@ -10,17 +10,13 @@ export const decrement = () => {
   };
 };
 
-export const usernameChanged = (text) => {
+export const inputChanged = (text, label) => {
   return {
-    type: 'USERNAME_CHANGED',
-    payload: text
-  };
-};
-
-export const passwordChanged = (text) => {
-  return {
-    type: 'PASSWORD_CHANGED',
-    payload: text
+    type: 'INPUT_CHANGED',
+    payload: {
+      text: text,
+      label: label
+    }
   };
 };
 
@@ -28,5 +24,12 @@ export const loginUser = ({ email, password }) => {
   return {
     type: 'LOGIN_USER',
     payload: { email, password }
+  };
+};
+
+export const signupUser = (user) => {
+  return {
+    type: 'SIGNUP_USER',
+    payload: user
   };
 };

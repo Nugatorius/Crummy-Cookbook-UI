@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 
 import Home from '../Components/Home';
 import Login from '../Components/Login';
+import Signup from '../Components/Signup';
 import Counter from '../Components/CounterRedux';
 
 export const Router = StackNavigator({
@@ -17,6 +18,12 @@ export const Router = StackNavigator({
   },
   login: {
     screen: Login,
+    navigationOptions: {
+      header: null
+    }
+  },
+  signup: {
+    screen: Signup,
     navigationOptions: {
       header: null
     }

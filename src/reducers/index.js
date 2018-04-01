@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
 import counterReducer from './counter'; 
 import navReducer from './navigation'; 
-import authReducer from './auth';
+import loginReducer from './login';
+import signupReducer from './signup';
 
 export default combineReducers({
   counter: counterReducer,
   nav: navReducer,
-  auth: authReducer
+  login: loginReducer,
+  signup: signupReducer
 });

@@ -5,10 +5,8 @@ const INITIAL_STATE = {
 
 export default (state = INITIAL_STATE, action) => {
   switch(action.type) {
-  case 'USERNAME_CHANGED':
-    return { ...state, username: action.payload };
-  case 'PASSWORD_CHANGED':
-    return { ...state, password: action.payload };
+  case 'INPUT_CHANGED':
+    return { ...state, [action.payload.label]: action.payload.text };
   case 'LOGIN_USER':
     return { ...state, username: '', password: ''};
   default:
