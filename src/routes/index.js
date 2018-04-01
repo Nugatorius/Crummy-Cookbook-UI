@@ -4,19 +4,29 @@ import { StackNavigator, addNavigationHelpers } from 'react-navigation';
 import { createReduxBoundAddListener } from 'react-navigation-redux-helpers';
 import PropTypes from 'prop-types';
 
-import TabsNavigator from './tabs.routes';
+import AuthRoutes from './auth.routes';
 import Home from '../Components/Home';
+import Counter from '../Components/CounterRedux';
 
 export const Router = StackNavigator({
-  counter: {
-    screen: TabsNavigator,
+  home: {
+    screen: Home,
     navigationOptions: {
-      title: 'counter'
+      header: null
     }
   },
-  home: {
-    screen: Home
-  }
+  auth: {
+    screen: AuthRoutes,
+    navigationOptions: {
+      header: null
+    }
+  },
+  counter: {
+    screen: Counter,
+    navigationOptions: {
+      header: null
+    }
+  },
 });
 
 class RouterWithNavState extends Component {

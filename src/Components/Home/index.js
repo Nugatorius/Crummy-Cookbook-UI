@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { NavigationActions } from 'react-navigation'; 
 
 import HomeStyle from './Home.style';
-import Header from '../Header';
-import Button from '../Button';
+import Header from '../Utils/Header';
+import Button from '../Utils/Button';
 
 export default class Home extends Component {
   
@@ -22,7 +22,7 @@ export default class Home extends Component {
     return (
       <View style={viewStyles}>
         <Header title="Crummy Cook recipes" />
-        {<Button text="Counter" onPress={() => this.handleOnPress()} />}
+        <Button text="Counter" onPress={() => this.handleOnPress()} />
       </View>
     );
   }
