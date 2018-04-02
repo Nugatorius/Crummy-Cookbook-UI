@@ -24,7 +24,25 @@ export const Router = StackNavigator({
   counter: {
     screen: Counter,
     navigationOptions: {
-      header: null
+      title: 'Counter Redux',
+      headerTintColor: 'black',
+      headerTitleStyle: {
+        fontSize: 20,
+        fontWeight: '400'
+      },
+      headerStyle: {
+        backgroundColor: '#F8F8F8',
+        height: 60,
+        paddingTop: 15,
+        shadowColor: '#000',
+        shadowOffset: {
+          width: 0,
+          height: 2
+        },
+        shadowOpacity: 0.5,
+        elevation: 2,
+        position: 'relative'
+      },
     }
   },
 });
@@ -36,7 +54,7 @@ class RouterWithNavState extends Component {
     const { dispatch, nav } = this.props;
     return (
       <Router
-        navigation={addNavigationHelpers({ dispatch, state: nav , addListener})}
+        navigation={addNavigationHelpers({ dispatch, state: nav, addListener })}
       />
     );
   }

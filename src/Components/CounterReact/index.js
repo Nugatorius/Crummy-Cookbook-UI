@@ -24,7 +24,6 @@ class Counter extends Component {
   render() {
     return (
       <View>
-        <Text>Counter Example with React</Text>
         <Text >{this.state.counter}</Text>
         <TouchableOpacity onPress={() => this.increment()}><Text>+</Text></TouchableOpacity>
         <TouchableOpacity onPress={() => this.decrement()}><Text>-</Text></TouchableOpacity>

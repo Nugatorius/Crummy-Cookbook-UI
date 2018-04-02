@@ -31,12 +31,12 @@ class Signup extends Component {
     const { viewStyles } = SignupStyle;
     return (
       <View style={viewStyles}>
-        <Header title="Crummy Cook recipes - Signup" />
+        <Header title='Crummy Cook recipes - Signup' />
         <Input label='Name' placeholder='Name' isPassword={false} onChangeText={(text) => this.onInputChange(text, 'name')} value={this.props.name} />
         <Input label='Username' placeholder='Username' isPassword={false} onChangeText={(text) => this.onInputChange(text, 'username')} value={this.props.username} />
         <Input label='Email' placeholder='Email' isPassword={false} onChangeText={(text) => this.onInputChange(text, 'email')} value={this.props.email} />
         <Input label='Password' placeholder='Password' isPassword={true} oonChangeText={(text) => this.onInputChange(text, 'password')} value={this.props.password} />
-        <Button text="Signup" onPress={() => this.onSignupPress()} />
+        <Button text='Signup' onPress={() => this.onSignupPress()} />
       </View>
     );
   }
