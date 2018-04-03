@@ -1,0 +1,8 @@
+2537ba6901fa39fe6671ba54cf1bb091
+var getNative = require('./_getNative'),
+root = require('./_root');
+
+/* Built-in method references that are verified to be native. */
+var Set = getNative(root, 'Set');
+
+module.exports = Set;

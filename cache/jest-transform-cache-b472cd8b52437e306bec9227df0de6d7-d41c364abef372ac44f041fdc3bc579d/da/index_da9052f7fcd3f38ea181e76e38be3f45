@@ -1,0 +1,4 @@
+75736e89d422c844f0038c2bae1eb0cd
+var bind = require('function-bind');
+
+module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
