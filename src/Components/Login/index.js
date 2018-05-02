@@ -31,10 +31,10 @@ class Login extends Component {
     const { viewStyles } = LoginStyle;
     return (
       <View style={viewStyles}>
-        <Header title="Crummy Cook recipes - Login" />
+        <Header title='Crummy Cook recipes - Login' />
         <Input label='Username' placeholder='Username' isPassword={false} onChangeText={(text) => this.onInputChange(text, 'username')} value={this.props.username} /> 
         <Input label='Password' placeholder='Password' isPassword={true} onChangeText={(text) => this.onInputChange(text, 'password')} value={this.props.password} /> 
-        <Button text="Login" onPress={() => this.onLoginPress()} />
+        <Button text='Login' onPress={() => this.onLoginPress()} />
       </View>
     );
   }

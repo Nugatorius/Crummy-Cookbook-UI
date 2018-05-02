@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1522775799778" clover="3.2.0">
+  <project timestamp="1522775799778" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="2" classes="2">
+      <file name="Header.style.js" path="/Users/aritraaritra/Documents/Projects/Nugatorius/Crummy-Cookbook-UI/src/Components/Utils/Header/Header.style.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/aritraaritra/Documents/Projects/Nugatorius/Crummy-Cookbook-UI/src/Components/Utils/Header/index.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>

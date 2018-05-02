@@ -1,0 +1,10 @@
+1d92651126755bd2704f8f2e3a0e23c9
+var parse = require("./parse.js"),
+compile = require("./compile.js");
+
+module.exports = function nthCheck(formula) {
+  return compile(parse(formula));
+};
+
+module.exports.parse = parse;
+module.exports.compile = compile;

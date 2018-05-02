@@ -5,18 +5,23 @@ const styles = {
     paddingLeft: 5,
     lineHeight: 25,
     fontSize: 18,
-    flex: 2
+    flex: 3,
+    borderRadius: 4,
+    borderWidth: 0.5,
+    borderColor: '#007aff',
+    height: 50
   },
   labelStyle: {
     fontSize: 14,
-    paddingLeft: 20,
+    paddingLeft: 10,
     flex: 1
   },
   containerStyle: {
     height: 40,
     flex: 1,
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    padding: 10
   }
 };
 

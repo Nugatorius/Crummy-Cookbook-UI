@@ -1,0 +1,8 @@
+411a05b5368d1b97889462be8e7b9c5b
+'use strict';
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./cjs/react-reconciler-reflection.production.min.js');
+} else {
+  module.exports = require('./cjs/react-reconciler-reflection.development.js');
+}

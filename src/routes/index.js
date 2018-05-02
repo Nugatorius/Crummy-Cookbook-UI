@@ -4,9 +4,8 @@ import { StackNavigator, addNavigationHelpers } from 'react-navigation';
 import { createReduxBoundAddListener } from 'react-navigation-redux-helpers';
 import PropTypes from 'prop-types';
 
+import AuthRoutes from './auth.routes';
 import Home from '../Components/Home';
-import Login from '../Components/Login';
-import Signup from '../Components/Signup';
 import Counter from '../Components/CounterRedux';
 
 export const Router = StackNavigator({
@@ -16,14 +15,8 @@ export const Router = StackNavigator({
       header: null
     }
   },
-  login: {
-    screen: Login,
-    navigationOptions: {
-      header: null
-    }
-  },
-  signup: {
-    screen: Signup,
+  auth: {
+    screen: AuthRoutes,
     navigationOptions: {
       header: null
     }
@@ -31,9 +24,27 @@ export const Router = StackNavigator({
   counter: {
     screen: Counter,
     navigationOptions: {
-      title: 'counter'
+      title: 'Counter Redux',
+      headerTintColor: 'black',
+      headerTitleStyle: {
+        fontSize: 20,
+        fontWeight: '400'
+      },
+      headerStyle: {
+        backgroundColor: '#F8F8F8',
+        height: 60,
+        paddingTop: 15,
+        shadowColor: '#000',
+        shadowOffset: {
+          width: 0,
+          height: 2
+        },
+        shadowOpacity: 0.5,
+        elevation: 2,
+        position: 'relative'
+      },
     }
-  }
+  },
 });
 
 class RouterWithNavState extends Component {
@@ -43,7 +54,7 @@ class RouterWithNavState extends Component {
     const { dispatch, nav } = this.props;
     return (
       <Router
-        navigation={addNavigationHelpers({ dispatch, state: nav , addListener})}
+        navigation={addNavigationHelpers({ dispatch, state: nav, addListener })}
       />
     );
   }

@@ -1,0 +1,3 @@
+1426c894116d74cbc85960747b57edcf
+/* eslint global-require: 0 */
+module.exports = require('./ReactSixteenAdapter');
