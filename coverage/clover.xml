@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1522775799778" clover="3.2.0">
-  <project timestamp="1522775799778" name="All files">
+<coverage generated="1522777640474" clover="3.2.0">
+  <project timestamp="1522777640474" name="All files">
     <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="2" classes="2">
       <file name="Header.style.js" path="/Users/aritraaritra/Documents/Projects/Nugatorius/Crummy-Cookbook-UI/src/Components/Utils/Header/Header.style.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

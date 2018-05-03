@@ -33,3 +33,9 @@ export const signupUser = (user) => {
     payload: user
   };
 };
+
+export const fetchAllGenres = () => {
+  return {
+    type: 'GENRE_FETCH_SUCCESS_ASYNC'
+  };
+};

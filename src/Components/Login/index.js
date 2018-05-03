@@ -22,7 +22,7 @@ class Login extends Component {
     const { username, password } = this.props;
     this.props.loginUser({ username, password });
     const navigateToCounter = NavigationActions.navigate({
-      routeName:'counter'
+      routeName:'genre'
     });
     this.props.navigation.dispatch(navigateToCounter);
   }

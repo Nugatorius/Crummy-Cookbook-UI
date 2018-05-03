@@ -5,18 +5,25 @@ import { createReduxBoundAddListener } from 'react-navigation-redux-helpers';
 import PropTypes from 'prop-types';
 
 import AuthRoutes from './auth.routes';
-import Home from '../Components/Home';
 import Counter from '../Components/CounterRedux';
+import BeerList from '../Components/BeerList';
+import Genre from '../Components/Genres';
 
 export const Router = StackNavigator({
-  home: {
-    screen: Home,
+  auth: {
+    screen: AuthRoutes,
     navigationOptions: {
       header: null
     }
   },
-  auth: {
-    screen: AuthRoutes,
+  beer: {
+    screen: BeerList,
+    navigationOptions: {
+      header: null
+    }
+  },
+  genre: {
+    screen: Genre,
     navigationOptions: {
       header: null
     }
