@@ -39,3 +39,10 @@ export const fetchAllGenres = () => {
     type: 'GENRE_FETCH_SUCCESS_ASYNC'
   };
 };
+
+export const searchGenre = (text) => {
+  return {
+    type: 'GENRE_SEARCH',
+    payload: text
+  };
+};
